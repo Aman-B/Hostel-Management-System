@@ -1,0 +1,51 @@
+create database hosteldb;
+
+use hosteldb;
+
+create table login
+(
+username varchar(20),
+password varchar(20)
+);
+
+insert into login(username,password)
+values ('aman','130911136'),
+('admin','admin'),
+('st','st');
+
+create table login1
+(
+username varchar(20),
+password varchar(20),
+filled varchar(20),
+alloted varchar(20)
+);
+
+insert into login1(username,password,filled,alloted)
+values ('aman','1234','no','no'),('admin','admin','no','no');
+
+insert into login1(username,password,filled,alloted)
+values ('nishanth','1234','no','no'),('admin','admin','no','no');
+
+
+insert into login1(username,password,filled,alloted)
+values ('junior','1234','no','no');
+create table stdetails
+(
+username varchar(20),
+name varchar(20),
+age int,
+regnum varchar(20),
+yearofstudy varchar(20),
+emailid varchar(50),
+p1 varchar(20),
+p2 varchar(20),
+p3 varchar(20),
+alloted varchar(20)
+);
+
+update stdetails set alloted='not alloted'  where regnum =130911136;
+
+insert into stdetails values('aman','Aman Bakshi',22,'130911136','4th','aman.bakshi06@gmail.com','not selected','not selected','not selected','not alloted');
+insert into stdetails values('nishant','Nishanth Narayan',22,'130911070','4th','nishanth.narayan027@gmail.com','not selected','not selected','not selected','not alloted');
+insert into stdetails values('junior','Junior guy',21,'140911060','3th','junior.guy27@gmail.com','not selected','not selected','not selected','not alloted');
